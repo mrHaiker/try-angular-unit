@@ -1,3 +1,7 @@
-<h1>
-  {{title}}
-</h1>
+<h1>My First Angular 2 App</h1>
+<input type="text" (ngModel)="newComment">
+<button type='button' (click)="add(newComment)">Submit</button>
+
+<ul>
+  <li *ngFor="let comment of comments">{{comment}}</li>
+</ul>`

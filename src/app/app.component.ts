@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app works!';
+  comments: Array<string>;
+  newComment: string;
+
+  constructor() {
+    this.comments = [];
+  }
+
+  add(comment:string) {
+    this.comments.unshift('a sample comment');
+  }
 }
