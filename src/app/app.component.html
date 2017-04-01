@@ -1,11 +1,4 @@
 <h1>My First Angular 2 App</h1>
-<input type="text" [(ngModel)]="newComment">
-<button type='button' (click)="add(newComment)">Submit</button>
+<app-navbar></app-navbar>
 
-<ul>
-  <li *ngFor="let comment of comments">
-    <p>{{comment.title}}</p>
-    <button type="button" (click)="like(comment)">like</button>
-    <span id="likes">{{comment.likes}}</span>
-  </li>
-</ul>
+<router-outlet></router-outlet>
