@@ -38,7 +38,7 @@ describe('Given should test the search result in details view', () => {
     let searchBox = element(by.css('form input'));
     searchBox.sendKeys('Thomas');
     searchButton.click();
-    let resultItem = element(by.linkText('Demaryius Thomas'));
+    let resultItem = element(by.linkText('Carolina Hess'));
     resultItem.click();
   });
 
