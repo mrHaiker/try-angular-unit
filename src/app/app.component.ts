@@ -14,6 +14,12 @@ export class AppComponent {
   }
 
   add(comment:string) {
-    this.comments.unshift('a sample comment');
+    console.log(comment);
+    let commentObj:any = {title: comment, likes: 0};
+    this.comments.unshift(commentObj);
+  }
+
+  like(comment) {
+      comment.likes++;
   }
 }
